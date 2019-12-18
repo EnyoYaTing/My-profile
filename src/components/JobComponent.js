@@ -30,6 +30,7 @@ function Job(props) {
     return(
         <div className="container">
             <div className="row">
+                <h1>My Work Experience</h1>
                 <Media list>
                     { workExperience }
                 </Media>

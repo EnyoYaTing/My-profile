@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { WORKS } from '../shared/works'
-import Job from './JobComponent'
+import Job from './JobComponent';
+import School from './SchoolComponent';
+import { WORKS } from '../shared/works';
+import { SCHOOLS } from '../shared/schools';
 
 
 class Home extends Component {
@@ -8,7 +10,8 @@ class Home extends Component {
         super(props);
 
         this.state = {
-            works: WORKS
+            works: WORKS,
+            schools: SCHOOLS
         }
     }
 
@@ -16,13 +19,12 @@ class Home extends Component {
         return(
             <div className="container">
                 <div className="row">
+                    <School schools={this.state.schools} />
                     <Job works={this.state.works} />
                 </div>    
             </div>    
         );
     }
-
-
 }
 
 export default Home;

@@ -1,6 +1,6 @@
 export const WORKS = [
     {
-        id:0,
+        id: 0,
         name: 'WisdomWin Quant Technology',
         image:'/assets/images/logo.png',
         title: 'UI designer & Front-end Developer Part-time Job',
@@ -9,7 +9,7 @@ export const WORKS = [
         description:'Collaborated with senior Full-stack developers to develop an interactive finance website, which provides users knowledge about Stock, Futures, and Options market.'
     },
     {
-        id:1,
+        id: 1,
         name: 'Taiwan International Patent & Law Office',
         image:'/assets/images/homeig.png',
         title: 'Japanese Patent Law Assistant',

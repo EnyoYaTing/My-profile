@@ -34,7 +34,7 @@ function School(props) {
                     {mySchool}
                 </Media>
             </div>    
-        </div>    
+        </div>      
     );
 }
 

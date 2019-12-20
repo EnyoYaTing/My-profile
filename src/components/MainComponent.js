@@ -11,21 +11,10 @@ class Main extends Component {
     }
 
     render() {
-        const HomePage = () => {
-            return(
-                <Home />
-            );
-        }
-
         return(
             <div>
                 <Header />
-                <Switch>
-                    <Route path="/home" component={ HomePage } />
-                    <Route exact path="/aboutme" component={ ()=> <Aboutme/> } />
-                    <Redirect to="/home" />
-                
-                </Switch>
+                <Home />
                 <Footer />  
             </div>
         );

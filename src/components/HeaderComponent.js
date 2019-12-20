@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { Link } from "react-scroll";
 
 class Header extends Component {
     constructor(props) {
@@ -20,7 +21,7 @@ class Header extends Component {
 
     render() {
         return(
-            <div>
+            <div className="narbar">
                 <Navbar light expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/">
@@ -30,24 +31,48 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink className="nav-link"  to='/home'>
-                                    <span></span> Home
-                                </NavLink>
+                                <Link
+                                    activeClass="active"
+                                    to="home"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>
+                                    Home
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to='/aboutMe'>
-                                    <span></span> About Me
-                                </NavLink>
+                                <Link
+                                    activeClass="active"
+                                    to="aboutme"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>
+                                    <span className="fa fa-list fa-lg"></span> About Me     
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link"  to='/work'>
-                                    <span></span> Work
-                                </NavLink>
+                                <Link
+                                    activeClass="active"
+                                    to="edu"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>
+                                    <span className="fa fa-list fa-lg"></span> Education    
+                                </Link>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to='/contactMe'>
-                                    <span></span> Contact Me
-                                </NavLink>
+                                <Link
+                                    activeClass="active"
+                                    to="ttt"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}>
+                                    <span className="fa fa-list fa-lg"></span> Contact Me   
+                                </Link>
                             </NavItem>
                             </Nav>
                         </Collapse>

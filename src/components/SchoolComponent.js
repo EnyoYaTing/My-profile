@@ -27,7 +27,7 @@ function School(props) {
     });
 
     return(
-        <div className="container">
+        <div className="container" id="edu">
             <div className="row">
                 <h1>Education</h1>
                 <Media list>

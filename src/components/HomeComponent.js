@@ -19,9 +19,10 @@ class Home extends Component {
 
     render(){
         return(
-            <div>
+            <div id="home">
                 <Jumbotron>
                     <div className="container">
+                        
                         <div className="row row-header">
                             <div className="col-12 col-sm-2 offset-sm-1"></div>
                             <div className="col-12 col-sm-6 offset-sm-1 font-weight-bold "> 
@@ -33,8 +34,8 @@ class Home extends Component {
                     </div>
                 </Jumbotron>
                 <div className="row">
-                    <Aboutme />
-                    <School schools={this.state.schools} />
+                    <Aboutme/>
+                    <School schools={this.state.schools}/>
                     <Job works={this.state.works} />
                 </div>    
             </div>    

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Aboutme(props) {
     return(
-        <div className="container"> 
+        <div className="container" id="aboutme"> 
             <div className="row">
                 <div className="col-12 col-sm-2"></div>
                 <div className="col-12 col-sm-6 offset-sm-1 text-center">

@@ -1,3 +1,4 @@
+// This Skills Component is to show all of capacilities of my skills
 import React, { useState } from 'react';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
 
@@ -30,36 +31,38 @@ function Skills(props) {
                 onExited={() => setAnimating(false)}
                 key={skill.id}
             >   
-                <img src="assets/images/slidebg.png" alt={skill.name} className="img-fluid" />
-                <div className="row"> 
-                    <div className="center">
-                        <p> {skill.name} </p> 
+                {/* <img src="assets/images/slidebg.png" alt={skill.name} className="img-fluid" /> */}
+                <div className="igtitle">
+                    <p> {skill.name} </p>
+                </div>   
+
+                <div className="row igs"> 
+                    <div className="col-12 col-sm-2">  
+                        <img src={skill.image} alt={skill.name} className="rounded" width="90%"/>     
                     </div> 
-                </div>     
-                <div className="row"> 
-                    <div className="centered">
-                        <img classname="igs" src={skill.image} alt={skill.name}/>
-                        <img classname="igs" src={skill.image_1} alt={skill.name}/>
-                        <img classname="igs" src={skill.image_2} alt={skill.name}/> 
+                    <div className="col-12 col-sm-2"> 
+                        <img src={skill.image_1} alt={skill.name} className="rounded" width="90%"/>
                     </div> 
-                </div>    
-                {/* <CarouselCaption captionHeader={skill.name} /> */}    
+                    <div className="col-12 col-sm-2"> 
+                        <img src={skill.image_2} alt={skill.name} className="rounded" width="90%"/> 
+                    </div>
+                </div>
             </CarouselItem>
         );
     });
 
     return(
-        <div className="myskill">
-            <Carousel
-                activeIndex={activeIndex}
-                next={next}
-                previous={previous}
-            >   
-                {slides}
-                <CarouselIndicators items={props.skills} activeIndex={activeIndex} onClickHandler={goToIndex} />        
-                <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-                <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-            </Carousel>
+        <div className="myskill" id="skill">
+            <div className="container">
+                <Carousel
+                    activeIndex={activeIndex}
+                    next={next}
+                    previous={previous}
+                >   
+                    {slides}
+                    <CarouselIndicators items={props.skills} activeIndex={activeIndex} onClickHandler={goToIndex} />        
+                </Carousel>
+            </div>
         </div>
     );
 }

@@ -15,7 +15,7 @@ export const SKILLS = [
     },
     {
         id: 2,
-        name: 'Others',
+        name: 'Tools & Others ',
         image:'/assets/images/vue.png',
         image_1:'/assets/images/react.png', 
         image_2:'/assets/images/js.png'

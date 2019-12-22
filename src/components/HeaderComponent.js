@@ -39,6 +39,17 @@ class Header extends Component {
                             <NavItem>
                                 <Link className="col-12 col-2"
                                     activeClass="active"
+                                    to="skill"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-80}
+                                    duration={500}>
+                                        Skill     
+                                </Link>
+                            </NavItem>
+                            <NavItem>
+                                <Link className="col-12 col-2"
+                                    activeClass="active"
                                     to="edu"
                                     spy={true}
                                     smooth={true}

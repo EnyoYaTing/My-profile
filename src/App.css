@@ -1,14 +1,71 @@
+/* --- HeaderComponent --- */
 .narbar {
-    /* background-color: var(--off-white); */
-    color:white ;
-    background-color: black;
+    /* background-color: var(--off-white); */  
+    background-color: ghostwhite ;
+    color: black;
     position: sticky; /* == position:fixed; */
     top: 0px;
     width: 100%;
-    height: 70px;
+    height: 60px;
     z-index: 1000;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
+
+/* --- HeaderComponent --- */
+.footer{
+  background-color:black;
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+/* --- HomeComponent --- */
+.jumbotron {
+    padding:250px 30px 250px 30px;
+    margin-bottom: 100px auto;;
+    background: rgb(14, 10, 20) ;
+    color:floralwhite;
+    text-align: center;
+    background-image: url('/assets/images/homeig.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron p {
+    font-family: 'Ubuntu', BlinkMacSystemFont;
+    padding-top:20px;
+    font-size:130%;
+}
+
+.jumbotron h1 {
+    font-family: 'Helvetica Neue', BlinkMacSystemFont;
+}
+
+/* --- AboutmeComponent --- */
+
+
+/* --- SchoolsComponent --- */
+.school {
+    color: white;
+    margin-top: 80px;
+    padding: 70px 30px;
+    background-size: cover; 
+    background:linear-gradient(rgba(131, 123, 123, 0.5),transparent);
+    background-color: black; /*this your primary color*/
+    font-size: 17px;
+}
+
+/* --- JobComponent --- */
+.job {
+    padding: 70px 30px;
+    font-size: 17px;
+}
+
+
+.imgComponent {
+  margin: 100px;
+}
+
+
 
 .row-header{
     margin:0px auto;
@@ -21,56 +78,22 @@
   border-bottom: 1px ridge;
   min-height:400px;
 }
-/* .school{
-  background-color:black;
-} */
 
-.footer{
-  background-color:black;
-  margin:0px auto;
-  padding: 20px 0px 20px 0px;
+/* --- SkillsComponent --- */
+.myskill {
+    margin-top: 80px;  
 }
 
-/* --- Home --- */
-.jumbotron {
-  padding:250px 30px 250px 30px;
-  margin-bottom: 100px auto;;
-  background: rgb(14, 10, 20) ;
-  color:floralwhite;
-  text-align: center;
-  background-image: url('/assets/images/homeig.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+.myskill .center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.jumbotron p {
-  font-family: 'Ubuntu', BlinkMacSystemFont;
-  padding-top:20px;
-  font-size:130%;
+.myskill .centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
-.jumbotron h1 {
-  font-family: 'Helvetica Neue', BlinkMacSystemFont;
-}
-
-/* .page-enter {
-opacity: 0.01;
-transform: translateX(-100%);
-}
-
-.page-enter-active {
-opacity: 1;
-transform: translateX(0%);
-transition: all 300ms ease-in;
-}
-
-.page-exit {
-opacity: 1;
-transform: translateX(0%);
-}
-
-.page-exit-active {
-opacity: 0.01;
-transform: translateX(100%);
-transition: all 300ms ease-out;
-} */

@@ -7,9 +7,12 @@ function RenderImages({skill}) {
 
     if (skill.id === 0) {
         for (let i=0; i<skill.image.length; i++) {
-            console.log("i :" + i);
-            images.push( <img src={skill.image[i]} alt={skill.name} width="10%"/> )
-            images.push( <div className="imggap"></div> )  
+            if (skill.image[i].length === 0 ) {
+                images.push( <div className="col-2"></div> ) 
+            } else {
+                images.push( <img src={skill.image[i]} alt={skill.name} width="10%"/> )
+                images.push( <div className="imggap"></div> ) 
+            }     
         }
         return (
             <div className="row"> {images} </div>
@@ -17,7 +20,6 @@ function RenderImages({skill}) {
     } 
     else if (skill.id === 1) {
         for (let i=0; i<skill.image.length; i++) {
-            console.log("i :" + i);
             images.push( <img src={skill.image[i]} alt={skill.name} width="10%"/> )
             images.push( <div className="imggap"></div> )     
         }
@@ -27,9 +29,12 @@ function RenderImages({skill}) {
     } 
     else {
         for (let i=0; i<skill.image.length; i++) {
-            console.log("i :" + i);
-            images.push( <img src={skill.image[i]} alt={skill.name} width="10%"/> ) 
-            images.push( <div className="imggap"></div> )     
+            if (skill.image[i].length === 0 ) {
+                images.push( <div className="col-2"></div> ) 
+            } else {
+                images.push( <img src={skill.image[i]} alt={skill.name} width="10%"/> )
+                images.push( <div className="imggap"></div> ) 
+            }     
         }
         return (
             <div className="row"> {images} </div>

@@ -2,7 +2,8 @@ export const SKILLS = [
     {
         id: 0,
         name: 'Frond-End Skills',
-        image: [    
+        image: [   
+            '', 
             '/assets/images/vue.png',
             '/assets/images/react.png', 
             '/assets/images/js.png',
@@ -24,11 +25,13 @@ export const SKILLS = [
     },
     {
         id: 2,
-        name: 'Tools & Others ',
-        image: [    
-            '/assets/images/mysql.png',
-            '/assets/images/react.png', 
-            '/assets/images/js.png'
+        name: ' Others Skills ',
+        image: [   
+            '', 
+            '/assets/images/github.png',
+            '/assets/images/java.png', 
+            '/assets/images/c.png',
+            '/assets/images/agile.png'
         ]
     }
 ]

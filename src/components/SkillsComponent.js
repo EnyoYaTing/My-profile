@@ -1,6 +1,6 @@
 // This Skills Component is to show all of capacilities of my skills
 import React, { useState } from 'react';
-import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselIndicators } from 'reactstrap';
 
 
 function Skills(props) {
@@ -38,15 +38,16 @@ function Skills(props) {
 
                 <div className="row igs"> 
                     <div className="col-12 col-sm-2">  
-                        <img src={skill.image} alt={skill.name} className="rounded" width="90%"/>     
+                        <img src={skill.image[0]} alt={skill.name} className="rounded" width="90%"/>  
                     </div> 
                     <div className="col-12 col-sm-2"> 
-                        <img src={skill.image_1} alt={skill.name} className="rounded" width="90%"/>
+                        <img src={skill.image[1]} alt={skill.name} className="rounded" width="90%"/>
                     </div> 
                     <div className="col-12 col-sm-2"> 
-                        <img src={skill.image_2} alt={skill.name} className="rounded" width="90%"/> 
+                        <img src={skill.image[2]} alt={skill.name} className="rounded" width="90%"/> 
                     </div>
-                </div>
+                </div>  
+                
             </CarouselItem>
         );
     });

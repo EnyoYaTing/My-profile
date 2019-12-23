@@ -1,7 +1,42 @@
 // This Skills Component is to show all of capacilities of my skills
 import React, { useState } from 'react';
-import { Carousel, CarouselItem, CarouselIndicators } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselIndicators, CarouselControl, CarouselCaption } from 'reactstrap';
 
+function RenderImages({skill}) {
+    let images = [];
+
+    if (skill.id === 0) {
+        for (let i=0; i<skill.image.length; i++) {
+            console.log("i :" + i);
+            images.push( <img src={skill.image[i]} alt={skill.name} width="10%"/> )
+            images.push( <div className="imggap"></div> )  
+        }
+        return (
+            <div className="row"> {images} </div>
+        );
+    } 
+    else if (skill.id === 1) {
+        for (let i=0; i<skill.image.length; i++) {
+            console.log("i :" + i);
+            images.push( <img src={skill.image[i]} alt={skill.name} width="10%"/> )
+            images.push( <div className="imggap"></div> )     
+        }
+        return (
+            <div className="row"> {images} </div>
+        );
+    } 
+    else {
+        for (let i=0; i<skill.image.length; i++) {
+            console.log("i :" + i);
+            images.push( <img src={skill.image[i]} alt={skill.name} width="10%"/> ) 
+            images.push( <div className="imggap"></div> )     
+        }
+        return (
+            <div className="row"> {images} </div>
+        );
+    }
+
+}
 
 function Skills(props) {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -30,25 +65,17 @@ function Skills(props) {
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
                 key={skill.id}
-            >   
-                {/* <img src="assets/images/slidebg.png" alt={skill.name} className="img-fluid" /> */}
+            >  
                 <div className="igtitle">
                     <p> {skill.name} </p>
-                </div>   
-
-                <div className="row igs"> 
-                    <div className="col-12 col-sm-2">  
-                        <img src={skill.image[0]} alt={skill.name} className="rounded" width="90%"/>  
-                    </div> 
-                    <div className="col-12 col-sm-2"> 
-                        <img src={skill.image[1]} alt={skill.name} className="rounded" width="90%"/>
-                    </div> 
-                    <div className="col-12 col-sm-2"> 
-                        <img src={skill.image[2]} alt={skill.name} className="rounded" width="90%"/> 
-                    </div>
+                </div>
+               
+                <div className="igs">
+                    <RenderImages skill={skill} />
                 </div>  
-                
-            </CarouselItem>
+                {/* <CarouselCaption captionHeader={skill.name} />   */}
+               
+            </CarouselItem>    
         );
     });
 
@@ -60,8 +87,10 @@ function Skills(props) {
                     next={next}
                     previous={previous}
                 >   
+                    <CarouselIndicators items={props.skills} activeIndex={activeIndex} onClickHandler={goToIndex} />
                     {slides}
-                    <CarouselIndicators items={props.skills} activeIndex={activeIndex} onClickHandler={goToIndex} />        
+                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+                    <CarouselControl direction="next" directionText="Next" onClickHandler={next} />        
                 </Carousel>
             </div>
         </div>

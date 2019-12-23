@@ -81,7 +81,7 @@
 
 /* --- SkillsComponent --- */
 .myskill {
-    padding-top: 100px;  
+    padding: 100px 0px;  
     background:linear-gradient(rgba(131, 123, 123, 0.5),transparent);
     background-color: black; /*this your primary color*/ 
 }
@@ -90,7 +90,6 @@
   position: relative;
   top: 0px;
   left: 40%;
-  padding-bottom: 20px;
   color:white;
   font-size: 35px;
 }
@@ -98,7 +97,11 @@
 .myskill .igs {
     position: relative;
     top: 30px;
-    left: 78%;
+    left: 60%;
     transform: translate(-50%, -50%);
     padding-top: 130px;
+}
+
+.myskill .imggap {
+    margin: 0 10px;   
 }

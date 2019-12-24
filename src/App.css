@@ -11,7 +11,6 @@
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* --- HeaderComponent --- */
 .footer{
   background-color:black;
   margin:0px auto;
@@ -19,25 +18,55 @@
 }
 
 /* --- HomeComponent --- */
-.jumbotron {
-    padding:250px 30px 250px 30px;
-    margin-bottom: 100px auto;;
-    background: rgb(14, 10, 20) ;
-    color:floralwhite;
+.homepage {
+    position: relative;
     text-align: center;
+    color: white;
+}
+
+.homepage .jumbotron {
+    padding:340px 0px;
+    background: rgb(14, 10, 20) ;
     background-image: url('/assets/images/homeig.png');
     background-size: cover;
     background-repeat: no-repeat;
+    /* opacity: 0.9;  --- image transparency */ 
 }
 
-.jumbotron p {
-    font-family: 'Ubuntu', BlinkMacSystemFont;
-    padding-top:20px;
-    font-size:130%;
+.homepage .container{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    margin:0px auto;
+    padding:0px auto;
+    font-size: 30px;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-style: oblique;
+    line-height: 60px;
 }
 
-.jumbotron h1 {
-    font-family: 'Helvetica Neue', BlinkMacSystemFont;
+.homepage .header{
+    padding-left: 45px;
+    margin-bottom: 200px;
+    font-size: 100px;
+    font-style: normal;
+    border-top: white;
+}
+
+.homepage .leftline{
+    position: relative;
+    left: 230px;
+    border-top: 8px solid white;
+    margin-top: 1em;
+    padding-right: 100px;
+}
+
+.homepage .rightline{
+    position: relative;
+    right: 190px;
+    border-top: 8px solid white;
+    margin-top: 1em;
+    padding-right: 100px;
 }
 
 /* --- AboutmeComponent --- */
@@ -67,10 +96,7 @@
 
 
 
-.row-header{
-    margin:0px auto;
-    padding:0px auto;
-}
+
 
 .row-content {
   margin:0px auto;

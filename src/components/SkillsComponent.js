@@ -1,6 +1,6 @@
 // This Skills Component is to show all of capacilities of my skills
 import React, { useState } from 'react';
-import { Carousel, CarouselItem, CarouselIndicators, CarouselControl, CarouselCaption } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselIndicators, CarouselControl } from 'reactstrap';
 
 function RenderImages({skill}) {
     let images = [];
@@ -78,8 +78,6 @@ function Skills(props) {
                 <div className="igs">
                     <RenderImages skill={skill} />
                 </div>  
-                {/* <CarouselCaption captionHeader={skill.name} />   */}
-               
             </CarouselItem>    
         );
     });

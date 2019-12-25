@@ -26,17 +26,16 @@ function School(props) {
     });
 
     return(
-        <div className="school">
-            <div className="container" id="edu">
-                <div className="row">
-                    <div className="col-12 col-sm-1"></div>
-                    <div className="col-12 col-sm-3">
-                        <h1>Education</h1> 
+        <div className="school" id="edu">
+            <div className="container">
+                <div className="row row-heading">
+                    <div className="col-12">
+                        <p>Education</p> 
                     </div>   
                 </div>    
-                <div className="row"> 
+                <div className="row row-content"> 
                     <div className="col-12 col-sm-1"></div>
-                    <div className="col-12 col-sm-10">   
+                    <div className="col-12 col-sm-8">   
                         <Media list>
                             {mySchool}
                         </Media> 

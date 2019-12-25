@@ -28,22 +28,21 @@ function Job(props) {
     });
 
     return(
-        <div className="job">
-            <div className="container" id="jobs">
-                <div className="row">
-                    <div className="col-12 col-sm-1"></div>
-                    <div className="col-12 col-sm-5">
-                        <h1>My Work Experience</h1>
+        <div className="job" id="jobs">
+            <div className="container" >
+                <div className="row row-heading">
+                    <div className="col-12">
+                        <p>Work Experience</p>
                     </div>
-                    <div className="row"> 
-                        <div className="col-12 col-sm-1"></div>
-                        <div className="col-12 col-sm-10">     
-                            <Media list>
-                                { workExperience }
-                            </Media>
-                        </div>  
-                    </div>      
                 </div>    
+                <div className="row row-content"> 
+                    <div className="col-12 col-sm-1"></div>
+                    <div className="col-12 col-sm-10">     
+                        <Media list>
+                            { workExperience }
+                        </Media>
+                    </div>  
+                </div>          
             </div>
         </div>        
     );

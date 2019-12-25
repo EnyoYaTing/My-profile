@@ -4,6 +4,7 @@ import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Aboutme from './AboutmeComponent';
 import Skills from './SkillsComponent';
+import Interest from './InterestComponent';
 import Job from './JobComponent';
 import School from './SchoolComponent';
 import { WORKS } from '../shared/works';
@@ -31,6 +32,7 @@ class Main extends Component {
                 <Home />
                 <Aboutme/>
                 <Skills skills={this.state.skills} />
+                <Interest />
                 <School schools={this.state.schools}/>
                 <Job works={this.state.works} />
                 <Footer />  

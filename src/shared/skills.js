@@ -4,8 +4,8 @@ export const SKILLS = [
         name: 'Frond-End Skills',
         image: [   
             '', 
+            '/assets/images/react.png',
             '/assets/images/vue.png',
-            '/assets/images/react.png', 
             '/assets/images/js.png',
             '/assets/images/graphql.png'
         ]

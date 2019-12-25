@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Carousel, CarouselItem, CarouselIndicators, CarouselControl } from 'reactstrap';
 
+
 function RenderImages({skill}) {
     let images = [];
 
@@ -44,6 +45,7 @@ function RenderImages({skill}) {
 }
 
 function Skills(props) {
+    
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
@@ -71,7 +73,7 @@ function Skills(props) {
                 onExited={() => setAnimating(false)}
                 key={skill.id}
             >  
-                <div className="igtitle">
+                <div className="ig-title">
                     <p> {skill.name} </p>
                 </div>
                

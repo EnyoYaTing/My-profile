@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Jumbotron } from 'reactstrap';
-
+import Interest from './InterestComponent';
 
 class Home extends Component {
 

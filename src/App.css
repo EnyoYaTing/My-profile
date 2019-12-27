@@ -129,8 +129,8 @@
 /* --- Schools Component --- */
 .school {
     color: white;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-size: cover; 
     background:linear-gradient(rgba(131, 123, 123, 0.5),transparent);
     background-color: black; /*this your primary color*/
@@ -144,13 +144,60 @@
 }
 
 .school .row-content {
-    font-size: 17px;
+    font-size: 18px;
     font-family: 'Source Sans Pro', sans-serif;
+    line-height: 18px;
 }
+
+.school .heading {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.school .code-box {
+    width: 150px;
+    height: 150px;
+    color: greenyellow;
+    background: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    box-shadow: 2px 2px 2px #D8D8D8;
+} 
+
+.school .code-boxin {
+    position: relative;
+    top: 20%;
+    margin: 10px 10px 10px 10px;
+    color: greenyellow;
+    font-family: 'Wendy One', sans-serif; 
+}
+
+.school .japan-box {
+    width: 150px;
+    height: 150px;
+    background: darkblue;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    box-shadow: 2px 2px 2px #D8D8D8;
+} 
+
+.school .japan-boxin {
+    margin: 35px 10px 10px 10px;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Kosugi Maru', sans-serif;
+    line-height: 30px;
+}
+
+
+
+
+
 
 /* --- JobComponent --- */
 .job {
-
     padding-top: 60px;
     padding-bottom: 60px;
 }

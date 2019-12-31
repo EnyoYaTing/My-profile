@@ -13,7 +13,7 @@ function RenderSchools({school}) {
                         <div className="code-boxin">
                             <Typewriter
                                 options={{
-                                    strings: ['Hello, Welcome to the Bristol Coding World!'],
+                                    strings: ['console.log ( Hello, Welcome to the Coding World! );'],
                                     autoStart: true,
                                     loop: true,
                                 }}

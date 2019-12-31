@@ -1,24 +1,32 @@
 import React from 'react';
-import { Media } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody } from 'reactstrap';
 
 function RenderWorks({work}) {
     return(
         <div key={work.id} className="col-12 mt-5">
-            <Media tag="li">
-                <Media left middle>
-                    <Media object src={ work.image } alt={ work.name } width="100" height="100"/>
-                </Media>
-                <Media body className="ml-5">
-                    <Media heading>{ work.name }</Media>
-                    <p>{ work.title }</p>
-                    <p>{ work.location }</p>
-                    <p>{ work.date }</p>    
-                    <p>{ work.description }</p>
-                </Media>
-            </Media>    
+            <Card>
+                <div className="row">
+                    <div className="col-12 col-sm-7">
+                        <CardBody>
+                            <div className="content" >
+                                <CardText> { work.name } </CardText>
+                                <div className="content-1">
+                                    <CardText> { work.title } </CardText>
+                                    <CardText> { work.date } , { work.location } </CardText>
+                                    <CardText> { work.description } </CardText> 
+                                </div>
+                            </div>
+                        </CardBody>
+                    </div>
+                    <div className="col-12 col-sm-4">
+                        <CardImg src={ work.image } alt={ work.name } width="100"/>
+                    </div>
+                </div>
+            </Card>   
         </div>
     );   
 }
+
 
 function Job(props) {
     const workExperience = props.works.map((work) => {
@@ -38,9 +46,7 @@ function Job(props) {
                 <div className="row row-content"> 
                     <div className="col-12 col-sm-1"></div>
                     <div className="col-12 col-sm-10">     
-                        <Media list>
-                            { workExperience }
-                        </Media>
+                        { workExperience }
                     </div>  
                 </div>          
             </div>

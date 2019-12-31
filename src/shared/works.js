@@ -2,16 +2,16 @@ export const WORKS = [
     {
         id: 0,
         name: 'WisdomWin Quant Technology',
-        image:'/assets/images/logo.png',
+        image:'/assets/images/job-1.png',
         title: 'UI designer & Front-end Developer Part-time Job',
         date: 'Aug 2013 - May 2016',
         location: 'Taipei, Taiwan',
-        description:'Collaborated with senior Full-stack developers to develop an interactive finance website, which provides users knowledge about Stock, Futures, and Options market.'
+        description:'Designed UI and collaborated with senior Full-stack developers to develop an interactive finance website, which provides users knowledge about Stock, Futures, and Options market.'
     },
     {
         id: 1,
         name: 'Taiwan International Patent & Law Office',
-        image:'/assets/images/homeig.png',
+        image:'/assets/images/job-2.png',
         title: 'Japanese Patent Law Assistant',
         date: 'Aug 2013 - May 2016',
         location: 'Taipei, Taiwan',

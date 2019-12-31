@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 function Aboutme(props) {
     return(
@@ -20,9 +20,9 @@ function Aboutme(props) {
                     <div className="col-12 col-sm-2"></div>
                     <div className="col-12 col-sm-6 offset-sm-1">
                         <p> Hello, </p>
-                        <p> I am a full-stack web developer </p>
+                        <p> I am a web developer </p>
                         <p> who are enthusiatic about web design.</p>
-                        <p> Particularly, I am interested in</p>
+                        <p> I am also interested in</p>
                         <p> "Data Visualisation" and</p>
                         <p> "Optical Effects in User Interface".</p> 
                     </div>    

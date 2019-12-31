@@ -1,2 +1,1 @@
-##This is my online personal profile built by React.js
-
+## My online CV profile built by React.js

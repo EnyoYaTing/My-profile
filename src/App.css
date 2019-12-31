@@ -121,8 +121,7 @@
 /* --- Skills Component --- */
 .myskill {
     padding: 50px 0px;  
-    background:linear-gradient(rgba(131, 123, 123, 0.5),transparent);
-    background-color: black; /*this your primary color*/ 
+    background-color: pink;
 }
 
 .myskill .ig-title{
@@ -185,7 +184,7 @@
     border-style: solid;
     border-color: white;
     border-width: thin;
-    box-shadow: 2px 2px 2px #D8D8D8;
+    box-shadow: 3px 3px 3px #D8D8D8;
 } 
 
 .school .code-boxin {
@@ -199,16 +198,16 @@
 .school .japan-box {
     width: 150px;
     height: 150px;
-    background: #003300;
+    background: pink;
     border-style: solid;
-    border-color: #4d2600;
+    border-color: white;
     border-width: thin;
-    box-shadow: 2px 2px 2px #4d2600;
+    box-shadow: 3px 3px 3px white;
 } 
 
 .school .japan-boxin {
     margin: 35px 10px 10px 10px;
-    color: #ff6666; 
+    color: #133FA6; 
     font-weight: bold;
     font-family: 'Kosugi Maru', sans-serif;
     line-height: 30px;
@@ -221,6 +220,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
     font-weight: bold;
+}
+
+.job .enlarge:hover {
+    transform: scale(1.1);
 }
 
 .job .row-heading{

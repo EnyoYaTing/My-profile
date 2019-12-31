@@ -64,7 +64,9 @@ function RenderSchools({school}) {
 function School(props) {
     const mySchool = props.schools.map((school) => {
         return(
-            <RenderSchools school={school} />
+            <div key={school.id}>
+                <RenderSchools school={school} />
+            </div>
         );
     });
 

@@ -31,8 +31,8 @@ function RenderWorks({work}) {
 function Job(props) {
     const workExperience = props.works.map((work) => {
         return(
-            <div className="enlarge">
-            <RenderWorks work={work} />
+            <div className="enlarge" key={work.id}>
+                <RenderWorks work={work} />
             </div>
         );
     });

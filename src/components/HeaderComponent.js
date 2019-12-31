@@ -8,7 +8,7 @@ class Header extends Component {
             <div className="head">
                 <div className="container">
                      <div className="row">
-                        <div className="col-12 col-sm-4 offset-1"></div>
+                        <div className="col-12 col-sm-2 offset-1"></div>
                         <div className="hover-touch">
                             <Link className="col-12 col-2"
                                 activeClass="active"
@@ -37,7 +37,7 @@ class Header extends Component {
                                 to="skill"
                                 spy={true}
                                 smooth={true}
-                                offset={-100}
+                                offset={-120}
                                 duration={500}>
                                     Skill     
                             </Link>
@@ -48,7 +48,7 @@ class Header extends Component {
                                 to="edu"
                                 spy={true}
                                 smooth={true}
-                                offset={-120}
+                                offset={-50}
                                 duration={500}>
                                     Education    
                             </Link>
@@ -59,7 +59,7 @@ class Header extends Component {
                                 to="jobs"
                                 spy={true}
                                 smooth={true}
-                                offset={-100}
+                                offset={-50}
                                 duration={500}>
                                     Jobs   
                             </Link>

@@ -8,7 +8,6 @@ import Job from './JobComponent';
 import School from './SchoolComponent';
 import { WORKS } from '../shared/works';
 import { SCHOOLS } from '../shared/schools';
-import { IMAGES } from '../shared/images';
 import { SKILLS } from '../shared/skills';
 
 
@@ -19,7 +18,6 @@ class Main extends Component {
         this.state = {
             works: WORKS,
             schools: SCHOOLS,
-            imgs: IMAGES,
             skills: SKILLS
         }
     }

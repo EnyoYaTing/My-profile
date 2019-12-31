@@ -25,7 +25,7 @@ class Home extends Component {
                         <div className="row">
                             <div className="col-12 col-sm-1 offset-sm-1"></div>   
                             <div className="col-12 col-sm-9 ">      
-                                <p> On the way towards a Web Developer.</p>
+                                <p> On the way towards a professional Web Developer.</p>
                             </div> 
                         </div>
                        

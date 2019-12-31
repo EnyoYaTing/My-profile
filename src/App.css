@@ -12,6 +12,7 @@
     font-size: 20px;
     font-family: 'Luckiest Guy', cursive;
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 .hover-touch:hover {

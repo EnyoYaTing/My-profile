@@ -2,7 +2,7 @@ export const SCHOOLS = [
     {
         id: 0,
         name: 'University of Bristol',
-        image:'assets/images/bristol.png',
+        image:'/assets/images/bristol.png',
         department: 'MSc Computer Science',
         location: 'United Kingdom',
         date: '2018-2019',

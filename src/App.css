@@ -82,7 +82,7 @@
 .homepage .jumbotron {
     padding:340px 0px;
     background: rgb(14, 10, 20) ;
-    background-image: url('/assets/images/homeig.png?raw=true');
+    background-image: url('./assets/images/homeig.png?raw=true');
     background-size: cover;
     background-repeat: no-repeat;
 }

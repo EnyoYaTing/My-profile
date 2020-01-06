@@ -7,7 +7,7 @@ class App extends Component {
 
     render() {
         return (
-            <BrowserRouter>
+            <BrowserRouter basename="/calendar">
                 <div className="App">
                     <Main />
                 </div>

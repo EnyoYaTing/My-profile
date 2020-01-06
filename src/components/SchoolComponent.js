@@ -39,7 +39,7 @@ function RenderSchools({school}) {
                             <div className="japan-boxin">
                                 <Typewriter
                                     options={{
-                                        strings: [' よこそう. 淡江日本語の世界!'],
+                                        strings: [' ようこそ. 淡江日本語の世界!'],
                                         autoStart: true,
                                         loop: true,
                                     }}

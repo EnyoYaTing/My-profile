@@ -47,19 +47,20 @@
 .footer .row-content {
     text-align: center;
     padding-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footer a {
     color: #D8D8D8;
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footer a:hover {
     color: #F01163; 
-    font-size: 25px; 
+    font-size: 25px;
 }
-/* .footer img {
+
+.footer img {
     opacity: 80%;
     border-radius: 50%;
 }
@@ -69,7 +70,7 @@
     border-radius: 50%;
     border-style: solid;
     border-color: #F01163;
-} */
+}
 
 
 /* --- Home Component --- */

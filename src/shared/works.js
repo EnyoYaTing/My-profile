@@ -2,7 +2,7 @@ export const WORKS = [
     {
         id: 0,
         name: 'WisdomWin Quant Technology',
-        image:'./assets/images/job-1.png',
+        image:'../assets/images/job-1.png',
         title: 'UI designer & Front-end Developer Part-time Job',
         date: 'Aug 2013 - May 2016',
         location: 'Taipei, Taiwan',
@@ -11,7 +11,7 @@ export const WORKS = [
     {
         id: 1,
         name: 'Taiwan International Patent & Law Office',
-        image:'./assets/images/job-2.png',
+        image:'../assets/images/job-2.png',
         title: 'Japanese Patent Law Assistant',
         date: 'Aug 2013 - May 2016',
         location: 'Taipei, Taiwan',

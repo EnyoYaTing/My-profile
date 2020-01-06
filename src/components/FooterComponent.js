@@ -18,12 +18,14 @@ function Footer(props) {
                     <div className="col-12 col-sm-4 offset-1"></div>
                     <div className="col-12 col-sm-1">
                         <a href="https://www.linkedin.com/in/ya-ting-lin-6858ab193/">
-                            <img src="/assets/images/linkedin.png" alt="Linkedin" width="70"/>
+                            {/* <img src="/assets/images/linkedin.png" alt="Linkedin" width="70"/> */}
+                            Linkedin
                         </a>        
                     </div>  
                     <div className="col-12 col-sm-1">  
                         <a href="mailto: da18787@alumni.bristol.ac.uk">
-                            <img src="/assets/images/mail.png" alt="e-mail" width="70"/>
+                            {/* <img src="/assets/images/mail.png" alt="e-mail" width="70"/> */}
+                            Email
                         </a>  
                     </div>   
                 </div>    

@@ -19,7 +19,7 @@ function RenderWorks({work}) {
                         </CardBody>
                     </div>
                     <div className="col-12 col-sm-4">
-                        <CardImg src={ work.image } alt={ work.name } width="100"/>
+                        <CardImg src={ work.image } alt={ work.name } width="100"/> 
                     </div>
                 </div>
             </Card>   

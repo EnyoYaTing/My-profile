@@ -5,3 +5,5 @@ The single page app just introduce me in brief.
 The sections include:
 
 Home, About me, Skill, Education, Work experience, and Contact.
+
+## yarn start
